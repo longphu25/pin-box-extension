@@ -1,1 +1,14 @@
-{}
+{
+  "trailingComma": "all",
+  "semi": true,
+  "singleQuote": true,
+  "tailwindPreserveDuplicates": true,
+  "tailwindPreserveWhitespace": true,
+  "tailwindFunctions": ["clsx"],
+
+  "plugins": [
+    "prettier-plugin-sort-imports",
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-tailwindcss"
+  ]
+}
