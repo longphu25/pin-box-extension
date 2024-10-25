@@ -30,11 +30,13 @@ export default defineManifest({
         'https://x.com/*',
         'https://pro.x.com/*',
       ],
-      js: ['src/contentScript/twitter.ts'],
+      js: ['src/contentScript/twitter.tsx'],
+      run_at: 'document_idle',
     },
     {
       matches: ['<all_urls>'],
-      js: ['src/contentScript/all.ts'],
+      js: ['src/contentScript/all.tsx'],
+      run_at: 'document_idle',
     },
   ],
   web_accessible_resources: [
